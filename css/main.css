@@ -1,0 +1,114 @@
+
+/* Global Rules */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
+
+body {
+    margin-top: 50px;
+    background-color: #1255a1;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    /*justify-content: center;*/
+}
+h1 , h2 , h3 , h4 , h5 , h6 {
+
+    font-family: 'Josefin Sans', sans-serif;
+}
+::-webkit-scrollbar
+{
+    background-color: #abb1b8;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(45, 11, 220);
+}
+
+
+
+input{
+    margin-top: 20px;
+    margin: 20px auto; 
+    text-align: center;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+.form-column{
+    justify-content: center;
+    margin-left:300px;
+    margin-right: 300px;
+}
+input {    
+    -webkit-transition: -webkit-transform 0.8s ease-in;
+    transition: -webkit-transform 0.8s ease-in;
+    -o-transition: transform 0.8s ease-in;
+    transition: transform 0.8s ease-in;
+    transition: transform 0.8s ease-in, -webkit-transform 0.8s ease-in;
+}
+input:focus {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+tr td,th {
+    padding: 10px 0;
+    border: 1px solid #181313;
+    
+}
+#total {
+    background: #12b35a;
+    justify-content: center;
+    text-align: center;
+
+
+}
+#total::before {
+    content: "Total  :  ";
+}
+#alert {
+    position: fixed;
+    z-index: 99999;
+    -webkit-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    padding: 15px 15px;
+    border-radius: 4px;
+    left: -400px;
+    justify-content: center;
+}
+
+
+  /* Mobile first queries */
+  
+  
+  /* Larger than mobile */
+  
+  @media (min-width: 400px) {
+ 
+  } 
+  
+  /* Larger than phablet */
+  
+  @media (min-width: 550px) {
+
+  }
+  
+  
+  /* Larger than tablet */
+  
+  @media (min-width: 750px) {}
+  
+  
+  /* Larger than desktop */
+  
+  @media (min-width: 1000px) {}
+  
+  
+  /* Larger than Desktop HD */
+  
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
